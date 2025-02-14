@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hello123_</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>Profile</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Three.js core -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- GLTFLoader (matching r128) -->
+  <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r128/examples/js/loaders/GLTFLoader.js"></script>
 </head>
 <body>
+  <div class="profile-card">
     <div class="title-bg">
-       <p class="small-text">hello, im</p>
-       <p class="big-text">hello123!</p>
+      <div class="text-container">
+        <span class="small-text">hello, im</span>
+        <span class="big-text">hello123!</span>
+      </div>
+      <div class="model-wrapper">
+        <canvas id="modelCanvas"></canvas>
+      </div>
     </div>
+    <div class="info">
+      <p>hello, i am hello123! i make <a href="#">castle decks</a>.</p>
+    </div>
+  </div>
+
+  <!-- Our main JS code -->
+  <script src="script.js"></script>
 </body>
 </html>
